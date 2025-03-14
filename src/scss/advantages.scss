@@ -1,4 +1,48 @@
 .advan.container {
   margin-top: 16px;
   gap: 24px;
+  align-items: flex-start;
+  border: 1px solid $_bg_border_home;
+  border-radius: 12px;
+  background: $_bg_gradient;
+  box-shadow: $_shadow;
+}
+
+.section-title {
+}
+.advan-img {
+  border-radius: 12px;
+}
+.advan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.advan-item {
+  display: flex;
+  gap: 12px;
+}
+.advan-number {
+  box-shadow: $_shadow;
+  font-family: $_font-family;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: $_white_text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid $_bg_border_home;
+  background-color: $_bg_bright_lavender;
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+}
+.advan-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--dark-plum);
+  max-width: 205px;
 }
