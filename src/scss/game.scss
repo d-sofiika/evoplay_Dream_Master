@@ -1,31 +1,44 @@
 #game {
-  padding-top: 181px;
+  padding-top: 40px;
 }
 
-#game .container {
-  padding: 0 72px;
+@media screen and (min-width: 1200px) {
+  #game {
+    padding-top: 181px;
+  }
+}
+
+#game .game-container {
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 24px;
 }
 
-.game-title {
-  font-family: $_second-family;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 0.75;
-  color: $_title_color;
+@media screen and (min-width: 1200px) {
+  #game .game-container {
+    padding: 0 72px;
+    gap: 32px;
+  }
 }
 
 .game-list {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .game-list {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 .game-item {
-  flex-basis: calc(100% - 20px) / 2;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -35,12 +48,23 @@
   line-height: 1.5;
 }
 
+@media screen and (min-width: 1200px) {
+  .game-item {
+    width: calc(100% - 20px) / 2;
+  }
+}
+
 .game-thumb {
   min-width: 100%;
-  max-height: 399px;
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 320px) {
+  .game-thumb {
+    height: 399px;
+  }
 }
 
 .game-picture {
@@ -50,12 +74,21 @@
 
 .game-txt {
   max-width: 518px;
+  width: 100%;
 }
 
 .game-sec-txt {
   color: $_text_color;
   font-family: $_second-family;
-  font-size: 28px;
-  font-style: normal;
-  line-height: 0.857;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+@media screen and (min-width: 1200px) {
+  .game-sec-txt {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 0.857;
+  }
 }
