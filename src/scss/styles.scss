@@ -11,8 +11,6 @@
 @import './footer.scss';
 
 :root {
-  --second-family: 'Open Sans', sans-serif;
-  --third-family: 'Lora', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -28,11 +26,16 @@
   overflow-x: hidden;
 }
 body {
-  font-family: var(--third-family);
+  font-family: $_second-family;
 }
+
 .container {
-  padding: 0 16px;
+  padding: 24px 0;
   width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .section {
