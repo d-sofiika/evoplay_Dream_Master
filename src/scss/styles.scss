@@ -30,7 +30,6 @@ body {
 
 .container {
   padding: 24px 12px;
-  margin-bottom: 40px;
   max-width: 290px;
   width: 100%;
   display: flex;
@@ -39,7 +38,6 @@ body {
   justify-content: center;
   @include media(desktop) {
     padding: 24px;
-    margin-bottom: 140px;
   }
 }
 
