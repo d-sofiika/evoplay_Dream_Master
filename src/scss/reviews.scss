@@ -7,3 +7,55 @@
   flex-direction: column;
   gap: 32px;
 }
+
+.reviews-list {
+  display: flex;
+  gap: 65px;
+  width: 100%;
+  color: $_text_color;
+  text-align: center;
+  font-family: $_font-family;
+}
+
+.reviews-item {
+  width: calc(100% - 4 * 65px) / 5;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid $_bg_border_home;
+  background-color: $_bg_light;
+  box-shadow: 0px 4px 14px 0px $_shadow-clr;
+}
+
+.reviews-txt {
+  max-width: 135px;
+  width: 100%;
+  overflow-y: scroll;
+  height: 120px;
+  margin-bottom: 16px;
+}
+
+.review-user-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.review-img-thumb {
+  width: 61px;
+  height: 61px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid $_bg_border_home;
+}
+
+.rating-list {
+  display: flex;
+  gap: 3px;
+}
+
+.rating-icon {
+  fill: $_gold;
+}
