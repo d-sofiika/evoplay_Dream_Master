@@ -30,12 +30,15 @@ body {
 
 .container {
   padding: 24px 12px;
-  max-width: 320px;
+  max-width: 290px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include media(desktop) {
+    padding: 24px;
+  }
 }
 
 .section {
