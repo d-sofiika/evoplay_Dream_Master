@@ -1,6 +1,4 @@
 .advan.container {
-  margin-top: 16px;
-  gap: 24px;
   align-items: flex-start;
   border: 1px solid $_bg_border_home;
   border-radius: 12px;
@@ -8,26 +6,46 @@
   box-shadow: $_shadow;
 }
 
-.section-title {
+.advan-title.section-title {
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+.advan-wrapper {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  width: 100%;
+  @include media(desktop) {
+    flex-direction: row-reverse;
+  }
 }
 .advan-img {
   border-radius: 12px;
+  @include media(desktop) {
+    width: 402px;
+  }
 }
 .advan-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  @include media(desktop) {
+    gap: 24px;
+  }
 }
 .advan-item {
   display: flex;
   gap: 12px;
+  @include media(desktop) {
+    align-items: center;
+  }
 }
 .advan-number {
   box-shadow: $_shadow;
   font-family: $_font-family;
   font-weight: 600;
-  font-size: 16px;
-  letter-spacing: -0.01em;
   color: $_white_text;
   display: flex;
   justify-content: center;
@@ -37,12 +55,15 @@
   border-radius: 12px;
   width: 48px;
   height: 48px;
+  @include media(desktop) {
+    gap: 24px;
+  }
 }
 .advan-description {
-  font-family: var(--font-family);
-  font-weight: 400;
+  font-family: $_font-family;
   font-size: 16px;
   line-height: 150%;
-  color: var(--dark-plum);
-  max-width: 205px;
+  color: $_dark_plum;
+  @include media(desktop) {
+  }
 }

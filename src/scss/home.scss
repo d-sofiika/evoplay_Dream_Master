@@ -7,7 +7,6 @@
   border: 1px solid $_bg_border_home;
   border-radius: 12px;
   @include media(desktop) {
-    margin-top: 84px;
     display: flex;
     align-items: flex-start;
     position: relative;
