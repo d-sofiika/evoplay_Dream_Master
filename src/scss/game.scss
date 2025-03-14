@@ -1,18 +1,9 @@
-#game {
-  padding-top: 40px;
-  @include media(desktop) {
-    padding-top: 180px;
-  }
-}
-
-#game .game-container {
-  padding: 0 16px;
+.game-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
   @include media(desktop) {
-    padding: 0 72px;
     gap: 32px;
   }
 }
@@ -44,17 +35,27 @@
 
 .game-thumb {
   min-width: 100%;
-  height: 100%;
+  height: 399px;
   border-radius: 12px;
   overflow: hidden;
   @include media($mobile) {
-    height: 399px;
+    height: auto;
   }
 }
 
 .game-picture {
   width: 100%;
   height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include media($mobile) {
+      object-position: center;
+      height: auto;
+    }
+  }
 }
 
 .game-txt {
