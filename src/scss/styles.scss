@@ -47,6 +47,27 @@ body {
   overflow-x: hidden;
 }
 
+.link-btn {
+  display: block;
+  max-width: 332px;
+  width: 100%;
+  padding: 19px 0;
+  text-align: center;
+  color: $_white_text;
+  font-family: $_second-family;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.143;
+  border-radius: 12px;
+  border: 1px solid $_bg_border_home;
+  background-color: $_bg_button;
+  transition: background-color $_transition_time $_transition_func;
+}
+
+.link-btn:is(:hover, :focus) {
+  background-color: $_bg_hover_button;
+}
+
 @include media(desktop) {
   .container {
     width: 1200px;
