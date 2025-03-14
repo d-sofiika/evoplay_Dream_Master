@@ -3,6 +3,7 @@
 }
 .home-box.container {
   background-color: $_bg_light;
+  padding: 24px 0;
   border: 1px solid $_bg_border_home;
   border-radius: 12px;
   @include media(desktop) {
@@ -16,7 +17,6 @@
 .title-box {
   font-family: $_second-family;
   color: $_title_color;
-
   padding: 0 16px;
   margin-bottom: 24px;
   width: 100%;
@@ -41,7 +41,8 @@
   font-size: 24px;
   color: $_dark_plum;
   max-width: 200px;
-  margin-top: 12px;
+  margin-top: 24px;
+  line-height: 100%;
   @include media(desktop) {
     font-weight: 400;
     font-size: 28px;
@@ -64,7 +65,7 @@
 }
 .google-link {
   color: $_white_text;
-
+  line-height: 24px;
   background-color: $_dark_plum;
   display: flex;
   align-items: center;
@@ -73,15 +74,20 @@
   border-radius: 12px;
   padding: 5px 12px;
   width: 288px;
-  transition: background-color 300ms ease;
+  transition: background-color $_transition_time $_transition_func;
   @include media(desktop) {
     margin-left: 72px;
     justify-content: flex-start;
     width: 250px;
   }
 }
+
 .google-link:hover {
   background-color: $_bg_hover_button;
+}
+.icon-google {
+  width: 33px;
+  height: 40px;
 }
 
 .text-link {

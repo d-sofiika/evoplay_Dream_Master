@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  padding: 24px 0;
+  padding: 0 16px;
   max-width: 320px;
   width: 100%;
   display: flex;
@@ -46,7 +46,6 @@ body {
   justify-content: center;
   overflow-x: hidden;
 }
-
 .link-btn {
   display: block;
   max-width: 332px;
