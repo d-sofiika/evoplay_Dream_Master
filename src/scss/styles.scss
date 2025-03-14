@@ -40,12 +40,17 @@ body {
 
 .section {
   margin: 0 auto;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+  @include media(desktop) {
+    padding: 70px 0;
+  }
 }
+
 .link-btn {
   display: block;
   max-width: 332px;
@@ -79,8 +84,25 @@ body {
   }
 }
 
+.section-wrapper {
+  padding: 24px 12px;
+  border-radius: 12px;
+  border: 1px solid $_bg_border_home;
+  background: linear-gradient(
+    180deg,
+    $_gradient_0 0%,
+    $_gradient_25 25%,
+    $_gradient_50 50%
+  );
+  box-shadow: 0px 4px 14px 0px rgba(125, 79, 163, 0.25);
+  @include media(desktop) {
+    padding: 24px 24px;
+  }
+}
+
 @include media(desktop) {
   .container {
     max-width: 1200px;
+    padding: 0 72px;
   }
 }
