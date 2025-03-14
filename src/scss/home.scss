@@ -27,6 +27,10 @@
   color: $_dark_plum;
   max-width: 200px;
 }
+.home-img {
+  border-radius: 7px;
+  margin-bottom: 24px;
+}
 .google-link {
   color: $_white_text;
   background-color: $_dark_plum;
@@ -38,6 +42,10 @@
   padding: 0px 12px;
   width: 288px;
   height: 62px;
+  transition: background-color 300ms ease;
+}
+.google-link:hover {
+  background-color: $_bg_hover_button;
 }
 .text-link {
   font-family: $_font-family;
