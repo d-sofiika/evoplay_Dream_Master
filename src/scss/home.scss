@@ -1,0 +1,50 @@
+.home-box.container {
+  background-color: $_bg_light;
+
+  border: 1px solid $_bg_border_home;
+  border-radius: 12px;
+}
+.title-box {
+  font-family: $_second-family;
+  color: $_title_color;
+  margin-bottom: 24px;
+  padding: 0 16px;
+  width: 100%;
+}
+.title-first {
+  margin-bottom: 12px;
+}
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 75%;
+  margin-bottom: 12px;
+}
+.title-second {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: $_dark_plum;
+  max-width: 200px;
+}
+.google-link {
+  color: $_white_text;
+  background-color: $_dark_plum;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  border-radius: 12px;
+  padding: 0px 12px;
+  width: 288px;
+  height: 62px;
+}
+.text-link {
+  font-family: $_font-family;
+  font-weight: 400;
+  font-size: 20px;
+}
+.text-google {
+  font-weight: 500;
+  font-size: 20px;
+}
