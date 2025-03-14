@@ -88,13 +88,8 @@ body {
   padding: 24px 12px;
   border-radius: 12px;
   border: 1px solid $_bg_border_home;
-  background: linear-gradient(
-    180deg,
-    $_gradient_0 0%,
-    $_gradient_25 25%,
-    $_gradient_50 50%
-  );
-  box-shadow: 0px 4px 14px 0px rgba(125, 79, 163, 0.25);
+  background: $_section_gradient;
+  box-shadow: $_shadow;
   @include media(desktop) {
     padding: 24px 24px;
   }

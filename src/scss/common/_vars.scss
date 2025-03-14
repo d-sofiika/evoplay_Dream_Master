@@ -21,3 +21,9 @@ $_transition_time: 0.25s;
 $_transition_func: ease-in;
 
 $_shadow: 0 4px 14px 0 rgba(125, 79, 163, 0.25);
+$_section_gradient: linear-gradient(
+  180deg,
+  #e9daf3 0%,
+  #f4d7e9 25%,
+  #c1e7ff 50%
+);
