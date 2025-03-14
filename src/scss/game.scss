@@ -1,10 +1,7 @@
 #game {
   padding-top: 40px;
-}
-
-@media screen and (min-width: 1200px) {
-  #game {
-    padding-top: 181px;
+  @include media(desktop) {
+    padding-top: 180px;
   }
 }
 
@@ -14,10 +11,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-}
-
-@media screen and (min-width: 1200px) {
-  #game .game-container {
+  @include media(desktop) {
     padding: 0 72px;
     gap: 32px;
   }
@@ -28,10 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-
-@media screen and (min-width: 1200px) {
-  .game-list {
+  @include media(desktop) {
     flex-direction: row;
     gap: 20px;
   }
@@ -46,10 +37,7 @@
   font-family: $_font-family;
   font-size: 16px;
   line-height: 1.5;
-}
-
-@media screen and (min-width: 1200px) {
-  .game-item {
+  @include media(desktop) {
     width: calc(100% - 20px) / 2;
   }
 }
@@ -59,10 +47,7 @@
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
-}
-
-@media screen and (min-width: 320px) {
-  .game-thumb {
+  @include media($mobile) {
     height: 399px;
   }
 }
@@ -83,10 +68,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.33;
-}
-
-@media screen and (min-width: 1200px) {
-  .game-sec-txt {
+  @include media(desktop) {
     font-size: 28px;
     font-weight: 400;
     line-height: 0.857;
