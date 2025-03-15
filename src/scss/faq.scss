@@ -29,7 +29,7 @@
 
 .faq-item {
   min-width: 100%;
-  padding: 36px 12px;
+  padding: 24px 12px;
   border-radius: 12px;
   border: 1px solid $_bg_border_home;
   display: flex;
@@ -52,11 +52,21 @@
 .faq-icon {
   border-radius: 50%;
   background-color: $_bg_main_color;
+  transition: transform $_transition_time $_transition_func;
+}
+
+.faq-icon.active {
+  transform: rotateZ(-90deg);
 }
 
 .faq-answer {
   margin-top: 12px;
   font-family: $_font-family;
+  padding-bottom: 1px;
+  letter-spacing: 0.019px;
   max-width: 548px;
   width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height $_transition_time $_transition_func;
 }
