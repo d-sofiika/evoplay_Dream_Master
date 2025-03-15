@@ -1,7 +1,6 @@
 const questionsRefs = document.querySelectorAll('.faq-btn');
 
 const handleClick = ({ currentTarget }) => {
-
   const panel = currentTarget.nextElementSibling;
   const svgElem = currentTarget.children[1];
 
@@ -9,9 +8,14 @@ const handleClick = ({ currentTarget }) => {
     if (svgElem?.nodeName === 'svg') {
       svgElem.classList.toggle('active');
     }
-    panel.style.maxHeight = panel.style.maxHeight
-      ? null
-      : `${panel.scrollHeight}px`;
+    if (!panel.style.maxHeight) {
+      panel.style.maxHeight = `${panel.scrollHeight}px`;
+      console.log(panel.style.maxHeight);
+      panel.classList.toggle('show');
+    } else {
+      panel.style.maxHeight = null;
+      panel.classList.toggle('show');
+    }
   }
 };
 
