@@ -86,6 +86,7 @@ body {
 
 .section-wrapper {
   padding: 24px 12px;
+  min-width: 100%;
   border-radius: 12px;
   border: 1px solid $_bg_border_home;
   background: $_section_gradient;
