@@ -9,11 +9,15 @@
   align-items: start;
 }
 
-.btn-move-back {
+.link-move-back {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
+  color: $_title_color;
+  font-family: $_font-family;
+  font-size: 16px;
+  line-height: 1.5;
 
   use {
     fill: currentColor;
@@ -22,13 +26,6 @@
   @include media(desktop) {
     margin-bottom: 42px;
   }
-}
-
-.link-move-back {
-  color: $_title_color;
-  font-family: $_font-family;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .policy-txt,
