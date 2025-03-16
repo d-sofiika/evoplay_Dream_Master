@@ -35,6 +35,8 @@
 .policy-txt-24 {
   color: $_text_color;
   font-family: $_font-family;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .policy-txt-24 {
@@ -91,6 +93,15 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.policy-sublist-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  @include media(desktop) {
+    gap: 8px;
+  }
 }
 
 .policy-marked {
