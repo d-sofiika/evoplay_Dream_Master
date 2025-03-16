@@ -1,5 +1,9 @@
 .home.section {
   overflow-x: visible;
+  padding-top: 88px;
+  @include media(desktop) {
+    padding-top: 170px;
+  }
 }
 .home-box.container {
   background: $_bg_gradient;
