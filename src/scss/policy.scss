@@ -44,6 +44,15 @@
   }
 }
 
+.policy-txt.policy-link {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
 .policy-list {
   display: flex;
   flex-direction: column;
@@ -78,7 +87,7 @@
   gap: 14px;
 }
 
-.policy-list-8{
+.policy-list-8 {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -103,5 +112,4 @@
   transform: translateY(-50%);
   background-color: $_text_color;
   border-radius: 50%;
-  
 }
