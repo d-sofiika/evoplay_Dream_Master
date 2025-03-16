@@ -1,0 +1,46 @@
+.gameplay-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.gameplay-title {
+  margin-bottom: 24px;
+}
+.gameplay-img {
+  border-radius: 12px;
+  @include media(desktop) {
+    width: 402px;
+  }
+}
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+.gameplay-item:last-child {
+  margin-top: 16px;
+  @include media(desktop) {
+    margin-top: 0px;
+  }
+}
+.gameplay-item {
+  display: flex;
+  gap: 12px;
+  @include media(desktop) {
+    align-items: center;
+  }
+}
+
+.gameplay-description {
+  font-family: $_font-family;
+  line-height: 150%;
+  color: $_dark_plum;
+}
