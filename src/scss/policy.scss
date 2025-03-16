@@ -1,7 +1,13 @@
 .policy-section {
   padding: 14px 0 20px 0;
   @include media(desktop) {
-    padding: 42px 0 120px 0;
+    padding: 40px 0 120px 0;
+  }
+}
+
+.policy-section.cookies {
+  @include media(desktop) {
+    padding-bottom: 60px;
   }
 }
 
@@ -33,13 +39,32 @@
   color: $_text_color;
   font-family: $_font-family;
   font-size: 16px;
+  max-width: 288px;
+  width: 100%;
   line-height: 1.5;
+  @include media(desktop) {
+    max-width: 1056px;
+  }
 }
 
 .policy-txt-24 {
   margin-bottom: 0;
   @include media(desktop) {
     margin-bottom: 24px;
+  }
+}
+
+.txt-width-876 {
+  max-width: 876px;
+  width: 100%;
+}
+
+.policy-link,
+.policy-mail {
+  transition: color $_transition_time $_transition_func;
+  &:hover,
+  &:focus {
+    color: $_bg_hover_button;
   }
 }
 
@@ -77,6 +102,12 @@
   margin-bottom: 12px;
   @include media(desktop) {
     margin-bottom: 14px;
+  }
+}
+
+.policy-subtitle.cookies {
+  @include media(desktop) {
+    margin-bottom: 8px;
   }
 }
 
