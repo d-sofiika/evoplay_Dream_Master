@@ -38,26 +38,9 @@
     align-items: center;
   }
 }
-.advan-number {
-  box-shadow: $_shadow;
-  font-family: $_font-family;
-  font-weight: 600;
-  color: $_white_text;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid $_bg_border_home;
-  background-color: $_bg_bright_lavender;
-  border-radius: 12px;
-  width: 48px;
-  height: 48px;
-  @include media(desktop) {
-    gap: 24px;
-  }
-}
+
 .advan-description {
   font-family: $_font-family;
-  font-size: 16px;
   line-height: 150%;
   color: $_dark_plum;
   @include media(desktop) {
