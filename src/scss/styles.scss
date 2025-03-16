@@ -8,6 +8,7 @@
 @import './how.scss';
 @import './gallery.scss';
 @import './faq.scss';
+@import './policy.scss';
 @import './footer.scss';
 
 :root {
@@ -102,107 +103,4 @@ body {
     max-width: 1200px;
     padding: 0 72px;
   }
-}
-
-.policy-section {
-  padding: 14px 0 20px 0;
-  @include media(desktop) {
-    padding: 42px 0 94px 0;
-  }
-}
-
-.policy .container {
-  align-items: start;
-}
-
-.btn-move-back {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 24px;
-
-  use {
-    fill: currentColor;
-  }
-
-  @include media(desktop) {
-    margin-bottom: 42px;
-  }
-}
-
-.link-move-back {
-  color: $_title_color;
-  font-family: $_font-family;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.policy-txt,
-.policy-txt-72 {
-  color: $_text_color;
-  font-family: $_font-family;
-}
-
-.policy-txt-72 {
-  height: auto;
-  @include media(desktop) {
-    height: 72px;
-  }
-}
-
-.policy-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  width: 100%;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.section-title.policy {
-  margin-bottom: 12px;
-  @include media(desktop) {
-    margin-bottom: 14px;
-  }
-}
-
-.policy-subtitle {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 12px;
-  @include media(desktop) {
-    margin-bottom: 14px;
-  }
-}
-
-.policy-sublist {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.policy-marked {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4px;
-  gap: 4px;
-}
-.policy-item-marked {
-  padding-left: 24px;
-  position: relative;
-}
-
-.policy-item-marked::before {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  background-color: $_text_color;
-  border-radius: 50%;
 }
