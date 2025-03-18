@@ -29,13 +29,14 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/evoplay_Dream_Master/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/evoplay_Dream_Master/assets/styles-7e3fea0c.css">
+    <link rel="modulepreload" crossorigin href="/evoplay_Dream_Master/assets/vendor-8eb617ba.js">
+    <link rel="stylesheet" href="/evoplay_Dream_Master/assets/styles-431db280.css">
   </head>
   <body>
     <header class="header section">
   <div class="header-box">
     <div class="header-wrapper">
-      <a href="../index.html"
+      <a href="./index.html"
         ><picture>
           <source srcset="/evoplay_Dream_Master/assets/LogoBig-c1f26d91.png " media="(min-width: 769px)" />
           <source srcset="/evoplay_Dream_Master/assets/LogoMobile-390c499b.png " media="(max-width: 768px)" />
@@ -79,18 +80,24 @@
       <section class="home section" id="home">
   <div class="home-box container">
     <div class="title-box">
-      <h1 class="title title-first">Dream Master</h1>
-      <h2 class="title">Match Buster</h2>
+      <h1 class="section-title title title-first">Dream Master</h1>
+      <h2 class="section-title title">Match Buster</h2>
       <p class="text-second">Match, Blast, and Dream Big!</p>
     </div>
 
-    <img
-      class="home-img"
-      srcset="/evoplay_Dream_Master/assets/mob_1x-2665a4e9.jpg 320w, /evoplay_Dream_Master/assets/mob_2x-4379aa35.jpg 640w, /evoplay_Dream_Master/assets/desk_1x-7dd42ecb.jpg 1200w, /evoplay_Dream_Master/assets/desk_2x-08cae719.jpg 2400w"
-      sizes="(max-width: 768px) 320px, (min-width: 769px) 1200px"
-      src="/evoplay_Dream_Master/assets/mob_1x-2665a4e9.jpg"
-      alt="match"
-    />
+    <picture>
+      <source
+        srcset="/evoplay_Dream_Master/assets/desk_1x-7dd42ecb.jpg 1x, /evoplay_Dream_Master/assets/desk_2x-08cae719.jpg 2x"
+        sizes="(min-width: 1200px) 1200px"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/evoplay_Dream_Master/assets/mob_1x-2665a4e9.jpg 1x, /evoplay_Dream_Master/assets/mob_2x-4379aa35.jpg 2x"
+        sizes="(max-width: 1200px) 100vw"
+        media="(max-width: 1200px)"
+      />
+      <img class="home-img" src="/evoplay_Dream_Master/assets/mob_1x-2665a4e9.jpg" alt="match" />
+    </picture>
 
     <a
       target="_blank"
@@ -228,13 +235,23 @@
     <div class="section-wrapper">
       <h2 class="advan-title section-title">Advantages</h2>
       <div class="advan-wrapper">
-        <img
-          class="advan-img"
-          srcset="/evoplay_Dream_Master/assets/mob_1x-971bb4c6.jpg 320w, /evoplay_Dream_Master/assets/mob_2x-5c466222.jpg 640w, /evoplay_Dream_Master/assets/desk_1x-378b6fe3.jpg 1200w, /evoplay_Dream_Master/assets/desk_2x-a3ad8aec.jpg 2400w"
-          sizes="(max-width: 768px) 320px, (min-width: 769px) 1200px"
-          src="/evoplay_Dream_Master/assets/mob_1x-971bb4c6.jpg"
-          alt="Unlock"
-        />
+        <picture>
+          <source
+            srcset="/evoplay_Dream_Master/assets/desk_1x-378b6fe3.jpg 1x, /evoplay_Dream_Master/assets/desk_2x-a3ad8aec.jpg 2x"
+            sizes="(min-width: 1200px) 1200px"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/evoplay_Dream_Master/assets/mob_1x-971bb4c6.jpg 1x, /evoplay_Dream_Master/assets/mob_2x-5c466222.jpg 2x"
+            sizes="(max-width: 1200px) 100vw"
+            media="(max-width: 1200px)"
+          />
+          <img
+            class="advan-img"
+            src="/evoplay_Dream_Master/assets/mob_1x-971bb4c6.jpg"
+            alt="Unlock"
+          />
+        </picture>
         <ul class="advan-list">
           <li class="advan-item">
             <span class="number">1</span>
@@ -316,13 +333,23 @@
     <div class="section-wrapper">
       <h2 class="gameplay-title section-title">Gameplay</h2>
       <div class="gameplay-wrapper">
-        <img
-          class="gameplay-img"
-          srcset="/evoplay_Dream_Master/assets/mob_1x-8b46cb9c.jpg 320w, /evoplay_Dream_Master/assets/mob_2x-2288d013.jpg 640w, /evoplay_Dream_Master/assets/desk_1x-0039c051.jpg 1200w, /evoplay_Dream_Master/assets/desk_2x-c2fdc583.jpg 2400w"
-          sizes="(max-width: 768px) 320px, (min-width: 769px) 1200px"
-          src="/img/gameplay/jpeg/mob_1x.jpg  "
-          alt="Game"
-        />
+        <picture>
+          <source
+            srcset="/evoplay_Dream_Master/assets/desk_1x-0039c051.jpg 1x, /evoplay_Dream_Master/assets/desk_2x-c2fdc583.jpg 2x"
+            sizes="(min-width: 1200px) 1200px"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/evoplay_Dream_Master/assets/mob_1x-8b46cb9c.jpg 1x, /evoplay_Dream_Master/assets/mob_2x-2288d013.jpg 2x"
+            sizes="(max-width: 1200px) 100vw"
+            media="(max-width: 1200px)"
+          />
+          <img
+            class="gameplay-img"
+            src="/evoplay_Dream_Master/assets/mob_1x-8b46cb9c.jpg"
+            alt="Game"
+          />
+        </picture>
         <ul class="gameplay-list">
           <li class="gameplay-item">
             <span class="number">1</span>
@@ -685,13 +712,24 @@
     <div class="section-wrapper">
       <h2 class="how-title section-title">How to play?</h2>
       <div class="how-wrapper">
-        <img
-          class="how-img"
-          srcset="/evoplay_Dream_Master/assets/mob_1x-6dc1cac8.jpg 320w, /evoplay_Dream_Master/assets/mob_2x-af3e90ec.jpg 640w, /evoplay_Dream_Master/assets/desk_1x-e4e08688.jpg 1200w, /evoplay_Dream_Master/assets/desk_2x-154e335d.jpg 2400w"
-          sizes="(max-width: 768px) 320px, (min-width: 769px) 1200px"
-          src="/evoplay_Dream_Master/assets/mob_1x-6dc1cac8.jpg"
-          alt="Play"
-        />
+        <picture>
+          <source
+            srcset="/evoplay_Dream_Master/assets/desk_1x-e4e08688.jpg 1x, /evoplay_Dream_Master/assets/desk_2x-154e335d.jpg 2x"
+            sizes="(min-width: 1200px) 1200px"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/evoplay_Dream_Master/assets/mob_1x-6dc1cac8.jpg 1x, /evoplay_Dream_Master/assets/mob_2x-af3e90ec.jpg 2x"
+            sizes="(max-width: 1200px) 100vw"
+            media="(max-width: 1200px)"
+          />
+          <img
+            class="how-img"
+            src="/evoplay_Dream_Master/assets/mob_1x-6dc1cac8.jpg"
+            alt="Play"
+          />
+        </picture>
+
         <ul class="how-list">
           <li class="how-item">
             <span class="number">1</span>
