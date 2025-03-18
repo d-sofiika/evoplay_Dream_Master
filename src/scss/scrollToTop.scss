@@ -60,16 +60,16 @@
 
 .scroll-up-icon {
   display: flex;
-  width: 37px;
-  height: 38px;
+  width: 20px;
+  height: 22px;
   fill: currentColor;
   filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 4px $_bg_button)
     drop-shadow(0 0 8px $_bg_button);
 
   transition: filter 0.3s ease-in-out;
   @include media(desktop) {
-    width: 91px;
-    height: 95px;
+    width: 50px;
+    height: 54px;
     filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 4px $_bg_button)
       drop-shadow(0 0 8px $_bg_button);
   }
