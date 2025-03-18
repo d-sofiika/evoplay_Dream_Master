@@ -70,14 +70,4 @@ document.addEventListener('DOMContentLoaded', () => {
       gallerySwiper.autoplay.stop();
       restartAutoplay();
     });
-
-  gallerySwiper.scrollbar.dragEl.addEventListener('mousedown', () => {
-    gallerySwiper.autoplay.stop();
-    restartAutoplay();
-  });
-
-  gallerySwiper.el.addEventListener('mousedown', () => {
-    gallerySwiper.autoplay.stop();
-    restartAutoplay();
-  });
 });
