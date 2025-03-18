@@ -107,9 +107,12 @@
 
 .gallery-swiper {
   z-index: 0 !important;
-  max-width: 318px;
+  max-width: 320px;
   @include media(desktop) {
-    max-width: 1050px;
+    max-width: 1050px !important;
+  }
+  @include media(mobile) {
+    width: 100% !important;
   }
 }
 
@@ -144,6 +147,13 @@
     right: 0;
     width: 159px;
     bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 319.98px) {
+  .swiper-btn-wrapper{
+    left: 60%;
+    width: 60px;
   }
 }
 

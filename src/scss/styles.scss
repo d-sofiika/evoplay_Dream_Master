@@ -10,6 +10,11 @@
 @import './policy.scss';
 @import './footer.scss';
 @import './cookiesModal.scss';
+@import './scrollToTop.scss';
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   color: $_text_color;
