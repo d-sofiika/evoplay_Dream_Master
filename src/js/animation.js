@@ -42,7 +42,7 @@ gsap.to('.link-btn', {
 gsap.utils.toArray('.section-title').forEach(el => {
   gsap.from(el, {
     text: '',
-    duration: el.innerHTML.length * 0.1,
+    duration: el.innerHTML.length * 0.2,
     ease: 'none',
     scrollTrigger: {
       trigger: el,
