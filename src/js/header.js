@@ -1,3 +1,5 @@
+import gsap from 'gsap';
+
 document.addEventListener('DOMContentLoaded', () => {
   const btnOpen = document.querySelector('.btn-burger');
   const modal = document.querySelector('.modal-menu');
@@ -36,21 +38,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  function toggleMenu() {
-    modal.classList.toggle('is-open');
-    burgerMenu.classList.toggle('is-open');
-    document.body.style.overflow = modal.classList.contains('is-open')
-      ? 'hidden'
-      : '';
+  function openMenu() {
+    gsap.to(modal, { x: 0, duration: 0.5, ease: 'power2.out' });
+    modal.classList.add('is-open');
+    burgerMenu.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
   }
 
   function closeModal() {
-    modal.classList.remove('is-open');
-    burgerMenu.classList.remove('is-open');
-    document.body.style.overflow = '';
+    gsap.to(modal, { x: '100%', duration: 0.5, ease: 'power2.in' });
+    setTimeout(() => {
+      modal.classList.remove('is-open');
+      burgerMenu.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }, 500); // Чекаємо, поки завершиться анімація
   }
 
-  btnOpen.addEventListener('click', toggleMenu);
+  btnOpen.addEventListener('click', () => {
+    if (modal.classList.contains('is-open')) {
+      closeModal();
+    } else {
+      openMenu();
+    }
+  });
 
   navigation.forEach(item => {
     item.addEventListener('click', closeModal);
@@ -65,4 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   });
+
+  gsap.set(modal, { x: '100%' });
 });
