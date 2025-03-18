@@ -3,18 +3,29 @@
     <div class="section-wrapper">
       <h2 class="gameplay-title section-title">Gameplay</h2>
       <div class="gameplay-wrapper">
-        <img
-          class="gameplay-img"
-          srcset="
-            /img/gameplay/jpeg/mob_1x.jpg   320w,
-            /img/gameplay/jpeg/mob_2x.jpg   640w,
-            /img/gameplay/jpeg/desk_1x.jpg 1200w,
-            /img/gameplay/jpeg/desk_2x.jpg 2400w
-          "
-          sizes="(max-width: 768px) 320px, (min-width: 769px) 1200px"
-          src="/img/gameplay/jpeg/mob_1x.jpg  "
-          alt="Game"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/gameplay/jpeg/desk_1x.jpg 1x,
+              /img/gameplay/jpeg/desk_2x.jpg 2x
+            "
+            sizes="(min-width: 1200px) 1200px"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              /img/gameplay/jpeg/mob_1x.jpg 1x,
+              /img/gameplay/jpeg/mob_2x.jpg 2x
+            "
+            sizes="(max-width: 1200px) 100vw"
+            media="(max-width: 1200px)"
+          />
+          <img
+            class="gameplay-img"
+            src="/img/gameplay/jpeg/mob_1x.jpg"
+            alt="Game"
+          />
+        </picture>
         <ul class="gameplay-list">
           <li class="gameplay-item">
             <span class="number">1</span>

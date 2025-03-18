@@ -1,23 +1,24 @@
 <section class="home section" id="home">
   <div class="home-box container">
     <div class="title-box">
-      <h1 class="title title-first">Dream Master</h1>
-      <h2 class="title">Match Buster</h2>
+      <h1 class="section-title title title-first">Dream Master</h1>
+      <h2 class="section-title title">Match Buster</h2>
       <p class="text-second">Match, Blast, and Dream Big!</p>
     </div>
 
-    <img
-      class="home-img"
-      srcset="
-        /img/hero/jpeg/mob_1x.jpg   320w,
-        /img/hero/jpeg/mob_2x.jpg   640w,
-        /img/hero/jpeg/desk_1x.jpg 1200w,
-        /img/hero/jpeg/desk_2x.jpg 2400w
-      "
-      sizes="(max-width: 768px) 320px, (min-width: 769px) 1200px"
-      src="/img/hero/jpeg/mob_1x.jpg"
-      alt="match"
-    />
+    <picture>
+      <source
+        srcset="/img/hero/jpeg/desk_1x.jpg 1x, /img/hero/jpeg/desk_2x.jpg 2x"
+        sizes="(min-width: 1200px) 1200px"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/img/hero/jpeg/mob_1x.jpg 1x, /img/hero/jpeg/mob_2x.jpg 2x"
+        sizes="(max-width: 1200px) 100vw"
+        media="(max-width: 1200px)"
+      />
+      <img class="home-img" src="/img/hero/jpeg/mob_1x.jpg" alt="match" />
+    </picture>
 
     <a
       target="_blank"

@@ -3,18 +3,30 @@
     <div class="section-wrapper">
       <h2 class="how-title section-title">How to play?</h2>
       <div class="how-wrapper">
-        <img
-          class="how-img"
-          srcset="
-            /img/howToPlay/jpeg/mob_1x.jpg   320w,
-            /img/howToPlay/jpeg/mob_2x.jpg   640w,
-            /img/howToPlay/jpeg/desk_1x.jpg 1200w,
-            /img/howToPlay/jpeg/desk_2x.jpg 2400w
-          "
-          sizes="(max-width: 768px) 320px, (min-width: 769px) 1200px"
-          src="/img/howToPlay/jpeg/mob_1x.jpg"
-          alt="Play"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/howToPlay/jpeg/desk_1x.jpg 1x,
+              /img/howToPlay/jpeg/desk_2x.jpg 2x
+            "
+            sizes="(min-width: 1200px) 1200px"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              /img/howToPlay/jpeg/mob_1x.jpg 1x,
+              /img/howToPlay/jpeg/mob_2x.jpg 2x
+            "
+            sizes="(max-width: 1200px) 100vw"
+            media="(max-width: 1200px)"
+          />
+          <img
+            class="how-img"
+            src="/img/howToPlay/jpeg/mob_1x.jpg"
+            alt="Play"
+          />
+        </picture>
+
         <ul class="how-list">
           <li class="how-item">
             <span class="number">1</span>
