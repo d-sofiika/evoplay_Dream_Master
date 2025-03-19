@@ -20,7 +20,7 @@
 .advan-img {
   border-radius: 12px;
   @include media(desktop) {
-    width: 402px;
+    min-width: 400px;
   }
 }
 .advan-list {
