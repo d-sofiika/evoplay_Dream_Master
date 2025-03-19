@@ -107,3 +107,15 @@
   flex-direction: row;
   gap: 20px;
 }
+.menu-item-modal,
+.menu-item {
+  transition: scale $_transition_time $_transition_func,
+    color $_transition_time $_transition_func;
+}
+.menu-item-modal:hover,
+.menu-item:hover,
+.menu-item-modal:focus,
+.menu-item:focus {
+  color: $_bg_button;
+  scale: 1.07;
+}
