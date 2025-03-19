@@ -4,7 +4,6 @@ import 'swiper/css/scrollbar';
 import { Navigation, Autoplay } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
-  let reverse = false;
   let autoplayTimeout;
 
   const gallerySwiper = new Swiper('.gallery-swiper', {
@@ -13,33 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
       el: '.gallery-swiper .swiper-scrollbar',
       draggable: true,
     },
-
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
     slidesPerView: 'auto',
-    spaceBetween: 6,
+    spaceBetween: 6, 
     centeredSlides: false,
-    loop: false,
-    speed: 1000,
+    loop: true,
+    speed: 1000, 
     autoplay: {
-      delay: 2000,
+      delay: 500, 
       disableOnInteraction: true,
-    },
-    on: {
-      slideChange: function () {
-        if (!reverse && this.isEnd) {
-          reverse = true;
-          this.params.autoplay.reverseDirection = true;
-          this.autoplay.start();
-        } else if (reverse && this.isBeginning) {
-          reverse = false;
-          this.params.autoplay.reverseDirection = false;
-          this.autoplay.start();
-        }
-      },
     },
     breakpoints: {
       1200: {
@@ -48,26 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+
   const restartAutoplay = () => {
     if (autoplayTimeout) {
       clearTimeout(autoplayTimeout);
     }
     autoplayTimeout = setTimeout(() => {
       gallerySwiper.autoplay.start();
-    }, 5000);
+    }, 5000); 
   };
 
   document
     .querySelector('.swiper-button-next')
     .addEventListener('click', () => {
-      gallerySwiper.autoplay.stop();
       restartAutoplay();
     });
 
   document
     .querySelector('.swiper-button-prev')
     .addEventListener('click', () => {
-      gallerySwiper.autoplay.stop();
       restartAutoplay();
     });
 });
