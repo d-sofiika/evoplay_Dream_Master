@@ -47,7 +47,7 @@
   height: calc(100% - 10px);
   width: calc(100% - 10px);
   z-index: 100;
-  background-color: $_text_color;
+  background-color: $_bg_border_home;
   color: $_bg_button;
   transition: background-color, color;
   transition-duration: 400ms;
@@ -59,25 +59,27 @@
 }
 
 .scroll-up-icon {
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
-  width: 20px;
-  height: 22px;
+  width: 61px;
+  height: 60px;
   fill: currentColor;
-  filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 4px $_bg_button)
-    drop-shadow(0 0 8px $_bg_button);
+  filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 10px $_bg_button)
+    drop-shadow(0 0 30px $_bg_button);
 
   transition: filter 0.3s ease-in-out;
   @include media(desktop) {
-    width: 50px;
-    height: 54px;
-    filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 4px $_bg_button)
-      drop-shadow(0 0 8px $_bg_button);
+    width: 90px;
+    height: 94px;
+    filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 10px $_bg_button)
+      drop-shadow(0 0 30px $_bg_button);
   }
 }
 
-.scroll-up:is(:hover, :focus) .scroll-up-icon {
-  filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 4px $_bg_button)
-    drop-shadow(0 0 8px $_bg_button);
+.scroll-up-btn:is(:hover,:focus) .scroll-up-icon {
+  filter: drop-shadow(0 0 2px $_bg_border_home) drop-shadow(0 0 4px $_bg_border_home)
+    drop-shadow(0 0 8px $_bg_border_home);
 }
 
 @keyframes spin {
