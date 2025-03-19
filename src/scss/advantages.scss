@@ -15,12 +15,14 @@
   width: 100%;
   @include media(desktop) {
     flex-direction: row-reverse;
+    align-items: center;
   }
 }
 .advan-img {
   border-radius: 12px;
   @include media(desktop) {
     min-width: 400px;
+    width: 400px;
   }
 }
 .advan-list {
