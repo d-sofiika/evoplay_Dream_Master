@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const declineButton = document.querySelector('.cookie-decline');
   const body = document.body;
 
-  if (!localStorage.getItem('cookiesAccepted')) {
+  if (
+    !localStorage.getItem('cookiesAccepted') &&
+    !localStorage.getItem('cookiesDeclined')
+  ) {
     setTimeout(() => {
       cookiePopup.classList.add('show');
       body.classList.add('no-scroll');
@@ -27,8 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   declineButton?.addEventListener('click', () => {
+    localStorage.setItem('cookiesDeclined', 'true');
     hidePopup();
   });
 
-  closeButton?.addEventListener('click', hidePopup);
+  closeButton?.addEventListener('click', () => {
+    hidePopup();
+  });
 });
