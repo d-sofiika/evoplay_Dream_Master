@@ -65,20 +65,18 @@
   width: 61px;
   height: 60px;
   fill: currentColor;
-  filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 10px $_bg_button)
-    drop-shadow(0 0 30px $_bg_button);
+  filter: drop-shadow(0 0 0px $_scroll_shadow) drop-shadow(0 0 20px $_scroll_shadow)
+    drop-shadow(0 0 30px $_scroll_shadow);
 
   transition: filter 0.3s ease-in-out;
   @include media(desktop) {
     width: 90px;
     height: 94px;
-    filter: drop-shadow(0 0 2px $_bg_button) drop-shadow(0 0 10px $_bg_button)
-      drop-shadow(0 0 30px $_bg_button);
   }
 }
 
 .scroll-up-btn:is(:hover,:focus) .scroll-up-icon {
-  filter: drop-shadow(0 0 2px $_bg_border_home) drop-shadow(0 0 4px $_bg_border_home)
+  filter: drop-shadow(0 0 0px $_bg_border_home) drop-shadow(0 0 4px $_bg_border_home)
     drop-shadow(0 0 8px $_bg_border_home);
 }
 
